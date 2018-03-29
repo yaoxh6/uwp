@@ -1,0 +1,87 @@
+﻿<Page x:ConnectionId='1'
+    x:Class="first_project.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:first_project"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    xmlns:md="using:first_project.Models">
+    <Page.BottomAppBar>
+        <CommandBar>
+            <AppBarButton x:ConnectionId='2' x:Name="Delete" Icon="Delete"                       Visibility="Collapsed"></AppBarButton>
+            <AppBarButton x:ConnectionId='3' x:Name="DeleteAppBarButton" Icon="Add" Label="Add"                     />
+        </CommandBar>
+    </Page.BottomAppBar>
+
+    <Page.Resources>
+        <local:CheckBoxConverter x:Key="CheckBoxConverter"/>
+        <local:LineConverter x:Key="LineConverter"/>
+    </Page.Resources>
+
+    <ScrollViewer Height="auto">
+        <VisualStateManager.VisualStateGroups>
+            <VisualStateGroup x:ConnectionId='4' x:Name="VisualStateGroup">
+                <VisualState x:ConnectionId='5' x:Name="VisualState800">
+                    <VisualState.Setters>
+                        <Setter Target="grid2.(UIElement.Visibility)" Value="Visible"/>
+                    </VisualState.Setters>
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="800"/>
+                    </VisualState.StateTriggers>
+                </VisualState>
+            </VisualStateGroup>
+        </VisualStateManager.VisualStateGroups>
+
+        <Grid x:ConnectionId='6' x:Name="grid1" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Width="1000" Height="500">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <ListView x:ConnectionId='7' IsItemClickEnabled="True"                                                                              >
+                <ListView.ItemTemplate>
+                    <DataTemplate                         >
+                        <UserControl x:ConnectionId='15'>
+                            <Grid x:Name="GridLeft">
+                                <VisualStateManager.VisualStateGroups>
+                                    <VisualStateGroup x:Name="VisualStateGroup">
+                                        <VisualState x:Name="VisualState600">
+                                            <VisualState.Setters>
+                                                <Setter Target="Image.(UIElement.Visibility)" Value="Visible"/>
+                                            </VisualState.Setters>
+                                            <VisualState.StateTriggers>
+                                                <AdaptiveTrigger MinWindowWidth="600"/>
+                                            </VisualState.StateTriggers>
+                                        </VisualState>
+                                    </VisualStateGroup>
+                                </VisualStateManager.VisualStateGroups>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="30" />
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="Auto"/>
+                                </Grid.ColumnDefinitions>
+                                <CheckBox x:ConnectionId='16' Grid.Column="0" HorizontalAlignment="Center" x:Name="box"  Height="42" Width="81" Grid.ColumnSpan="2" Margin="0,4,11,4"                                                                                              />
+                                <Image Grid.Column="1" x:Name="Image" HorizontalAlignment="Center" Source="Assets/timg.png" Width="50" Visibility="Collapsed" />
+                                <TextBlock x:ConnectionId='17'  Grid.Column="2" HorizontalAlignment="Left"                       VerticalAlignment="Center" Height="20"  Width="60" />
+                                <Line x:ConnectionId='18' x:Name="Line" Grid.Column="2" Stretch="Fill" Stroke="Black" StrokeThickness="2"                                                                                            X1="1" Grid.ColumnSpan="2"  />
+                            </Grid>
+                        </UserControl>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            <Grid x:ConnectionId='8' x:Name="grid2" Width="400" Grid.Column="3" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Visibility="Collapsed">
+                <Image x:ConnectionId='9' x:Name="NewImage" Source="C:\Users\28798\Desktop\ok.jpg"></Image>
+                <DatePicker x:ConnectionId='10' Header="DueDate" x:Name="Date" HorizontalAlignment="Center" Margin="9,165,0,0" VerticalAlignment="Top"/>
+                <TextBox x:ConnectionId='11' Header="Title" x:Name="TitleBlock" HorizontalAlignment="Center" Text="" VerticalAlignment="Top" Margin="36,19,30,0" Width="294"/>
+                <TextBox x:ConnectionId='12' Header="Detail" x:Name="DetailBlock" HorizontalAlignment="Center" Text="" VerticalAlignment="Top" Margin="38,91,30,0" Height="63" Width="292"/>
+                <Button x:ConnectionId='13' x:Name="Create" Content="Create" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="39,240,258,0"                     />
+                <Button x:ConnectionId='14' Content="Cancel" HorizontalAlignment="Center" Margin="266,238,30,0" VerticalAlignment="Top" RenderTransformOrigin="0.469,0.005"                    />
+            </Grid>
+        </Grid>
+    </ScrollViewer>
+</Page>
+    
+<!--Visible
+Collapsed-->
+
