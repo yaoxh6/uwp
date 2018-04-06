@@ -1,1 +1,0 @@
-D:\osApplication\first_project\first_project\first_project.csproj;x86
