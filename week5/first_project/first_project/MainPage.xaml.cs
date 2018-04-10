@@ -161,7 +161,6 @@ namespace first_project
                 DetailBlock.Text = temp.description;
                 Date.Date = temp.date;
                 NewImage.Source = temp.src;
-                NewImage.Source = temp.src;
             }
             else
             {
@@ -216,6 +215,13 @@ namespace first_project
         
         protected override async void OnNavigatedTo(NavigationEventArgs e)
         {
+
+            if (e.NavigationMode == NavigationMode.New)
+            {
+                ApplicationData.Current.LocalSettings.Values.Remove("MainPage");
+                ApplicationData.Current.LocalSettings.Values["TempImage"] = null;
+            }
+
             if (ApplicationData.Current.LocalSettings.Values["TempImage"] != null)
             {
                 StorageFile tempimg;
@@ -227,11 +233,7 @@ namespace first_project
                 ApplicationData.Current.LocalSettings.Values["TempImage"] = null;
             }
 
-                if (e.NavigationMode == NavigationMode.New)
-            {
-                ApplicationData.Current.LocalSettings.Values.Remove("MainPage");
-            }
-            else
+            
             {
                 if (ApplicationData.Current.LocalSettings.Values.ContainsKey("MainPage"))
                 {
