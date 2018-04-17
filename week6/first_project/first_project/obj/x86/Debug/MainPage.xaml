@@ -1,0 +1,111 @@
+﻿<Page x:ConnectionId='1'
+    x:Class="first_project.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:first_project"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    xmlns:md="using:first_project.Models">
+    <Page.BottomAppBar>
+        <CommandBar>
+            <AppBarButton x:ConnectionId='2' x:Name="Delete" Icon="Delete"                       Visibility="Collapsed"></AppBarButton>
+            <AppBarButton x:ConnectionId='3' x:Name="DeleteAppBarButton" Icon="Add" Label="Add"                     />
+        </CommandBar>
+    </Page.BottomAppBar>
+    <Page.Background>
+        <ImageBrush Stretch="UniformToFill" ImageSource="Assets/windows.jpg"/>
+    </Page.Background>
+
+    <Page.Resources>
+        <local:CheckBoxConverter x:Key="CheckBoxConverter"/>
+        <local:LineConverter x:Key="LineConverter"/>
+    </Page.Resources>
+
+    <ScrollViewer Height="auto">
+        <VisualStateManager.VisualStateGroups>
+            <VisualStateGroup x:ConnectionId='4' x:Name="VisualStateGroup">
+                <VisualState x:ConnectionId='5' x:Name="VisualState800">
+                    <VisualState.Setters>
+                        <Setter Target="grid2.(UIElement.Visibility)" Value="Visible"/>
+                    </VisualState.Setters>
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="800"/>
+                    </VisualState.StateTriggers>
+                </VisualState>
+            </VisualStateGroup>
+        </VisualStateManager.VisualStateGroups>
+
+        <Grid x:ConnectionId='6' x:Name="grid1" Width="1000" Height="500">
+            <Grid.Background>
+                <ImageBrush Stretch="UniformToFill" ImageSource="Assets/windows.jpg"/>
+            </Grid.Background>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <ListView x:ConnectionId='7' IsItemClickEnabled="True"                                                                              >
+                <ListView.ItemTemplate>
+                    <DataTemplate                         >
+                        <UserControl x:ConnectionId='18'>
+                            <Grid x:Name="GridLeft">
+                                <VisualStateManager.VisualStateGroups>
+                                    <VisualStateGroup x:Name="VisualStateGroup">
+                                        <VisualState x:Name="VisualState600">
+                                            <VisualState.Setters>
+                                                <Setter Target="Image.(UIElement.Visibility)" Value="Visible"/>
+                                            </VisualState.Setters>
+                                            <VisualState.StateTriggers>
+                                                <AdaptiveTrigger MinWindowWidth="600"/>
+                                            </VisualState.StateTriggers>
+                                        </VisualState>
+                                    </VisualStateGroup>
+                                </VisualStateManager.VisualStateGroups>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="30" />
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="Auto"/>
+                                </Grid.ColumnDefinitions>
+                                <CheckBox x:ConnectionId='19' Grid.Column="0" HorizontalAlignment="Center" x:Name="box"  Height="42" Width="81" Grid.ColumnSpan="2" Margin="0,4,11,4"                                                                                              />
+                                <Image x:ConnectionId='20' Grid.Column="1" x:Name="Image" HorizontalAlignment="Center"                       Width="50" Visibility="Collapsed" />
+                                <TextBlock x:ConnectionId='21'  Grid.Column="2" HorizontalAlignment="Left"                       VerticalAlignment="Center" Height="20"  Width="60" />
+                                <Line x:ConnectionId='22' x:Name="Line" Grid.Column="2" Stretch="Fill" Stroke="Black" StrokeThickness="2"                                                                                            X1="1" Grid.ColumnSpan="2"  />
+                                <AppBarButton Grid.Column="3" Icon="Setting" IsCompact="True">
+                                    <AppBarButton.Flyout>
+                                        <MenuFlyout>
+                                            <MenuFlyoutItem x:ConnectionId='23' Text="Share"                             />
+                                        </MenuFlyout>
+                                    </AppBarButton.Flyout>
+                                </AppBarButton>
+                            </Grid>
+                        </UserControl>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            <Grid x:ConnectionId='8' x:Name="grid2" Width="400" Grid.Column="3" Visibility="Collapsed">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <TextBox x:ConnectionId='9' Grid.Row="0" x:Name="searchBox" Width="200" Margin="100,0,100,19"/>
+                <Button x:ConnectionId='10' x:Name="searchButton" Grid.Row="0" Content="search" HorizontalAlignment="Right" Width="100" Margin="0,0,0,18"                           />
+                <StackPanel Grid.Row="1" Margin="0,0,0,77" Grid.RowSpan="2">
+                    <Image x:ConnectionId='13' x:Name="NewImage" Source="Assets\2.png" Width="100" Height="130" Margin="150,0" RenderTransformOrigin="0.48,0.625"/>
+                    <Button x:ConnectionId='14' x:Name="Select" Content="Select"                     />
+                    <DatePicker x:ConnectionId='15' Header="DueDate" x:Name="Date" />
+                    <TextBox x:ConnectionId='16' Header="Title" x:Name="TitleBlock"  Text=""   />
+                    <TextBox x:ConnectionId='17' Header="Detail" x:Name="DetailBlock"  Text="" Height="88" />
+                </StackPanel>
+                <Button x:ConnectionId='11' Grid.Row="2" x:Name="Create" Content="Create" HorizontalAlignment="Center" VerticalAlignment="Top"                       RenderTransformOrigin="0.484,0.469" Height="34" Margin="0,153,337,0" />
+                <Button x:ConnectionId='12' Content="Cancel" HorizontalAlignment="Center" Margin="336,158,0,0" VerticalAlignment="Top"                      Height="29" RenderTransformOrigin="0.5,0.5" Grid.Row="2">
+                </Button>
+            </Grid>
+        </Grid>
+    </ScrollViewer>
+</Page>
+
+<!--Visible
+Collapsed-->
+
