@@ -1,0 +1,28 @@
+﻿<Page
+    x:Class="week7.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:week7"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="HotPink">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0">
+            <Button x:ConnectionId='4' x:Name="JsonsearchWeather" Content="Json查询天气"                             ></Button>
+            <TextBox x:ConnectionId='5' x:Name="JsonlocationInput"  Text="北京"  Height="50" Width="200"></TextBox>
+            <TextBox x:ConnectionId='6' x:Name="JsonweatherResult"  Text="hello weather" Height="50" Width="200"></TextBox>
+        </StackPanel>
+        
+        <StackPanel Grid.Row="1">
+            <Button x:ConnectionId='1' x:Name="XmlsearchWeather" Content="Xml查询天气"                                ></Button>
+            <TextBox x:ConnectionId='2' x:Name="XmllocationInput"  Text="北京"  Height="50" Width="200"></TextBox>
+            <TextBox x:ConnectionId='3' x:Name="XmlweatherResult"  Text="hello weather" Height="50" Width="200"></TextBox>
+        </StackPanel>
+    </Grid>
+</Page>
+
