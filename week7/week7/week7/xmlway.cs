@@ -16,7 +16,7 @@ namespace week7
     {
         public async static Task<CityWeatherResponse> GetWeather(String Location)
         {
-            string link = "http://api.map.baidu.com/telematics/v3/weather?location=" +Location +"&ak=8IoIaU655sQrs95uMWRWPDIa";
+            string link = "http://api.map.baidu.com/telematics/v3/weather?location=" + Location + "&ak=8IoIaU655sQrs95uMWRWPDIa";
             var http = new HttpClient();
             //var response = await http.GetAsync("http://api.map.baidu.com/telematics/v3/weather?location=%E6%AD%A6%E6%B1%89&ak=8IoIaU655sQrs95uMWRWPDIa");
             var response = await http.GetAsync(link);
@@ -28,100 +28,63 @@ namespace week7
             return data;
         }
 
-        public class Weather_data
-        {
-            /// <summary>
-            /// 
-            /// </summary>
-            public List<string> date { get; set; }
-            /// <summary>
-            /// 
-            /// </summary>
-            public List<string> dayPictureUrl { get; set; }
-            /// <summary>
-            /// 
-            /// </summary>
-            public List<string> nightPictureUrl { get; set; }
-            /// <summary>
-            /// 
-            /// </summary>
-            public List<string> weather { get; set; }
-            /// <summary>
-            /// 
-            /// </summary>
-            public List<string> wind { get; set; }
-            /// <summary>
-            /// 
-            /// </summary>
-            public List<string> temperature { get; set; }
-        }
+    }
 
-        public class Index
-        {
-            /// <summary>
-            /// 
-            /// </summary>
-            public List<string> title { get; set; }
-            /// <summary>
-            /// 
-            /// </summary>
-            public List<string> zs { get; set; }
-            /// <summary>
-            /// 
-            /// </summary>
-            public List<string> tipt { get; set; }
-            /// <summary>
-            /// 
-            /// </summary>
-            public List<string> des { get; set; }
-        }
+    [XmlRoot(ElementName = "weather_data")]
+    public class Weather_data
+    {
+        [XmlElement(ElementName = "date")]
+        public List<string> Date { get; set; }
+        [XmlElement(ElementName = "dayPictureUrl")]
+        public List<string> DayPictureUrl { get; set; }
+        [XmlElement(ElementName = "nightPictureUrl")]
+        public List<string> NightPictureUrl { get; set; }
+        [XmlElement(ElementName = "weather")]
+        public List<string> Weather { get; set; }
+        [XmlElement(ElementName = "wind")]
+        public List<string> Wind { get; set; }
+        [XmlElement(ElementName = "temperature")]
+        public List<string> Temperature { get; set; }
+    }
 
-        public class Results
-        {
-            /// <summary>
-            /// 北京
-            /// </summary>
-            public string currentCity { get; set; }
-            /// <summary>
-            /// 
-            /// </summary>
-            public Weather_data weather_data { get; set; }
-            /// <summary>
-            /// 
-            /// </summary>
-            public Index index { get; set; }
-            /// <summary>
-            /// 
-            /// </summary>
-            public string pm25 { get; set; }
-        }
+    [XmlRoot(ElementName = "index")]
+    public class Index
+    {
+        [XmlElement(ElementName = "title")]
+        public List<string> Title { get; set; }
+        [XmlElement(ElementName = "zs")]
+        public List<string> Zs { get; set; }
+        [XmlElement(ElementName = "tipt")]
+        public List<string> Tipt { get; set; }
+        [XmlElement(ElementName = "des")]
+        public List<string> Des { get; set; }
+    }
 
-        public class CityWeatherResponse
-        {
-            /// <summary>
-            /// 
-            /// </summary>
-            public string error { get; set; }
-            /// <summary>
-            /// 
-            /// </summary>
-            public string status { get; set; }
-            /// <summary>
-            /// 
-            /// </summary>
-            public string date { get; set; }
-            /// <summary>
-            /// 
-            /// </summary>
-            public Results results { get; set; }
-        }
+    [XmlRoot(ElementName = "results")]
+    public class Results
+    {
+        [XmlElement(ElementName = "currentCity")]
+        public string CurrentCity { get; set; }
+        [XmlElement(ElementName = "weather_data")]
+        public Weather_data Weather_data { get; set; }
+        [XmlElement(ElementName = "index")]
+        public Index Index { get; set; }
+        [XmlElement(ElementName = "pm25")]
+        public string Pm25 { get; set; }
+    }
 
-        //public class Root
-        //{
-        //    /// <summary>
-        //    /// 
-        //    /// </summary>
-        //    public CityWeatherResponse CityWeatherResponse { get; set; }
-        //}
+    [XmlRoot(ElementName = "CityWeatherResponse")]
+    public class CityWeatherResponse
+    {
+        [XmlElement(ElementName = "error")]
+        public string Error { get; set; }
+        [XmlElement(ElementName = "status")]
+        public string Status { get; set; }
+        [XmlElement(ElementName = "date")]
+        public string Date { get; set; }
+        [XmlElement(ElementName = "results")]
+        public Results Results { get; set; }
     }
 }
+
+

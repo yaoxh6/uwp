@@ -9,19 +9,21 @@
 
     <Grid Background="HotPink">
         <Grid.RowDefinitions>
+            <RowDefinition Height="300"/>
             <RowDefinition Height="auto"/>
             <RowDefinition Height="auto"/>
         </Grid.RowDefinitions>
-        <StackPanel Grid.Row="0">
+        <Image Grid.Row="0" Source="Assets/1.jpg" HorizontalAlignment="Stretch"></Image>
+        <StackPanel Grid.Row="1">
             <Button x:ConnectionId='4' x:Name="JsonsearchWeather" Content="Json查询天气"                             ></Button>
-            <TextBox x:ConnectionId='5' x:Name="JsonlocationInput"  Text="北京"  Height="50" Width="200"></TextBox>
-            <TextBox x:ConnectionId='6' x:Name="JsonweatherResult"  Text="hello weather" Height="50" Width="200"></TextBox>
+            <TextBox x:ConnectionId='5' x:Name="JsonlocationInput"  Text="北京"  Height="50" Width="400"></TextBox>
+            <TextBox x:ConnectionId='6' x:Name="JsonweatherResult"  Text="hello weather" Height="50" Width="400"></TextBox>
         </StackPanel>
         
-        <StackPanel Grid.Row="1">
+        <StackPanel Grid.Row="2">
             <Button x:ConnectionId='1' x:Name="XmlsearchWeather" Content="Xml查询天气"                                ></Button>
-            <TextBox x:ConnectionId='2' x:Name="XmllocationInput"  Text="北京"  Height="50" Width="200"></TextBox>
-            <TextBox x:ConnectionId='3' x:Name="XmlweatherResult"  Text="hello weather" Height="50" Width="200"></TextBox>
+            <TextBox x:ConnectionId='2' x:Name="XmllocationInput"  Text="北京"  Height="50" Width="400"></TextBox>
+            <TextBox x:ConnectionId='3' x:Name="XmlweatherResult"  Text="hello weather" Height="50" Width="400"></TextBox>
         </StackPanel>
     </Grid>
 </Page>

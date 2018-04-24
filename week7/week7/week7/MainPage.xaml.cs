@@ -35,7 +35,7 @@ namespace week7
             {
                 RootObject myWeather = await OpenWeatherMapProxy.GetWeather(JsonlocationInput.Text);
 
-                JsonweatherResult.Text = myWeather.results[0].location.name + "的温度是" + myWeather.results[0].now.temperature;
+                JsonweatherResult.Text = myWeather.results[0].location.name + "的温度是" + myWeather.results[0].now.temperature + " " + myWeather.results[0].now.text;
             }
             catch
             {
@@ -48,7 +48,8 @@ namespace week7
             try
             {
                 var XmlmyWeather = await xmlway.GetWeather(XmllocationInput.Text);
-                XmlweatherResult.Text = XmlmyWeather.results.currentCity + "的PM2.5是 " + XmlmyWeather.results.pm25;
+                XmlweatherResult.Text = XmlmyWeather.Results.CurrentCity + "的PM2.5是 " + XmlmyWeather.Results.Pm25
+                    + " " + XmlmyWeather.Results.Weather_data.Date[0];
             }
             catch
             {

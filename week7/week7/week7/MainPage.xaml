@@ -9,19 +9,21 @@
 
     <Grid Background="HotPink">
         <Grid.RowDefinitions>
+            <RowDefinition Height="300"/>
             <RowDefinition Height="auto"/>
             <RowDefinition Height="auto"/>
         </Grid.RowDefinitions>
-        <StackPanel Grid.Row="0">
+        <Image Grid.Row="0" Source="Assets/1.jpg" HorizontalAlignment="Stretch"></Image>
+        <StackPanel Grid.Row="1">
             <Button x:Name="JsonsearchWeather" Content="Json查询天气"  Click="searchWeather_Click"></Button>
-            <TextBox x:Name="JsonlocationInput"  Text="北京"  Height="50" Width="200"></TextBox>
-            <TextBox x:Name="JsonweatherResult"  Text="hello weather" Height="50" Width="200"></TextBox>
+            <TextBox x:Name="JsonlocationInput"  Text="北京"  Height="50" Width="400"></TextBox>
+            <TextBox x:Name="JsonweatherResult"  Text="hello weather" Height="50" Width="400"></TextBox>
         </StackPanel>
         
-        <StackPanel Grid.Row="1">
+        <StackPanel Grid.Row="2">
             <Button x:Name="XmlsearchWeather" Content="Xml查询天气"  Click="XmlsearchWeather_Click"></Button>
-            <TextBox x:Name="XmllocationInput"  Text="北京"  Height="50" Width="200"></TextBox>
-            <TextBox x:Name="XmlweatherResult"  Text="hello weather" Height="50" Width="200"></TextBox>
+            <TextBox x:Name="XmllocationInput"  Text="北京"  Height="50" Width="400"></TextBox>
+            <TextBox x:Name="XmlweatherResult"  Text="hello weather" Height="50" Width="400"></TextBox>
         </StackPanel>
     </Grid>
 </Page>
