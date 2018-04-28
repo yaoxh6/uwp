@@ -1,0 +1,55 @@
+﻿<Page
+    x:Class="week8.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:week8"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Page.Resources>
+        <local:PositionSliderConverter x:Key="converter" />
+        <Storyboard x:Name="AvrilStoryboard" RepeatBehavior="Forever">
+            <DoubleAnimation Duration="0:0:20" 
+                             To="360" 
+                             Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.Rotation)" 
+                             Storyboard.TargetName="Picture" 
+                             d:IsOptimized="True"/>
+        </Storyboard>
+    </Page.Resources>
+    <Page.BottomAppBar>
+        <CommandBar>
+            <AppBarButton x:Name="ButtonPlay" Icon="Play" Click="ButtonPlay_Click"/>
+            <AppBarButton x:Name="ButtonPause" Icon="Pause" Click="ButtonPause_Click"/>
+            <AppBarButton x:Name="ButtonStop" Icon="Stop" Click="ButtonStop_Click"/>
+            <AppBarButton x:Name="ButtonFullScreen" Icon="FullScreen" Click="ButtonFullScreen_Click"/>
+            <AppBarButton x:Name="ButtonFolder" Icon="Folder" Click="ButtonFolder_Click"/>
+            <AppBarButton x:Name="ButtonVolume" Icon="Volume" Click="ButtonVolume_Click"/>
+        </CommandBar>
+    </Page.BottomAppBar>
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="100"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Ellipse Grid.Row="1" Grid.Column="1"  x:Name="Picture" Height="250" Width="250" Visibility="Collapsed" RenderTransformOrigin="0.5, 0.5">
+            <Ellipse.RenderTransform>
+                <CompositeTransform />
+            </Ellipse.RenderTransform>
+            <Ellipse.Fill>
+                <ImageBrush ImageSource="Assets/1.jpg"/>
+            </Ellipse.Fill>
+        </Ellipse>
+        <MediaPlayerElement x:Name="_mediaPlayerElement" HorizontalAlignment="Stretch" Grid.Row="1" Grid.Column="1"/>
+        <StackPanel Grid.Row="2" Grid.Column="1">
+            <Slider x:Name="sliderLine" Value="{x:Bind _mediaTimelineController.Position, Converter={StaticResource converter},Mode=TwoWay}"/>
+        </StackPanel>
+        <Slider Grid.Row="2" Grid.Column="2" Minimum="0" Maximum="1" x:Name="Volumn" Width="100" Value="0.5" StepFrequency="0.1" ValueChanged="Volumn_ValueChanged" Orientation="Vertical" HorizontalAlignment="Right" Visibility="Collapsed"/>
+    </Grid>
+</Page>
