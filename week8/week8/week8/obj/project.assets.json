@@ -6353,11 +6353,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\osApplication\\week8\\week8\\week8.csproj",
+      "projectUniqueName": "D:\\yaoxh6-uwp\\uwp\\week8\\week8\\week8\\week8.csproj",
       "projectName": "week8",
-      "projectPath": "D:\\osApplication\\week8\\week8\\week8.csproj",
+      "projectPath": "D:\\yaoxh6-uwp\\uwp\\week8\\week8\\week8\\week8.csproj",
       "packagesPath": "C:\\Users\\28798\\.nuget\\packages\\",
-      "outputPath": "D:\\osApplication\\week8\\week8\\obj\\",
+      "outputPath": "D:\\yaoxh6-uwp\\uwp\\week8\\week8\\week8\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [

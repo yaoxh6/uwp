@@ -10,7 +10,7 @@
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>c7a30e14-c674-4efd-8b43-43642f439aa1</PackageIdentityName>
     <PackageIdentityPublisher>CN=28798</PackageIdentityPublisher>
-    <IntermediateOutputPath>D:\osApplication\week8\week8\obj\x86\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>D:\yaoxh6-uwp\uwp\week8\week8\week8\obj\x86\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType>
     </RemoteDeploymentType>
     <PackageRegistrationPath>
@@ -18,7 +18,7 @@
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
-    <LayoutDir>D:\osApplication\week8\week8\bin\x86\Debug\AppX</LayoutDir>
+    <LayoutDir>D:\yaoxh6-uwp\uwp\week8\week8\week8\bin\x86\Debug\AppX</LayoutDir>
     <RegisteredManifestChecksum>F6D3525E7794A127C521620F3E64BA54F10E7AECE210C901148CAF40C80E40EB</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>c7a30e14-c674-4efd-8b43-43642f439aa1_1.0.0.0_x86__x6kt9fxmh4xar</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>c7a30e14-c674-4efd-8b43-43642f439aa1_x6kt9fxmh4xar!App</RegisteredUserModeAppID>
@@ -28,16 +28,16 @@
     <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="D:\osApplication\week8\week8\bin\x86\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="D:\yaoxh6-uwp\uwp\week8\week8\week8\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-04-28T15:13:27.782</Modified>
+      <Modified>2018-05-04T00:26:22.444</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="D:\osApplication\week8\week8\bin\x86\Debug\week8.exe">
+    <AppxPackagedFile Include="D:\yaoxh6-uwp\uwp\week8\week8\week8\bin\x86\Debug\week8.exe">
       <PackagePath>entrypoint\week8.exe</PackagePath>
-      <Modified>2018-04-28T15:13:26.539</Modified>
+      <Modified>2018-05-04T00:26:18.275</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\28798\.nuget\packages\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\6.0.8\runtimes\win10-x86\nativeassets\uap10.0.15138\clrcompression.dll">
       <PackagePath>clrcompression.dll</PackagePath>
@@ -695,57 +695,57 @@
       <PackagePath>netstandard.dll</PackagePath>
       <Modified>2018-02-23T07:22:04.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\osApplication\week8\week8\Assets\1.jpg">
+    <AppxPackagedFile Include="D:\yaoxh6-uwp\uwp\week8\week8\week8\Assets\1.jpg">
       <PackagePath>Assets\1.jpg</PackagePath>
       <Modified>2018-04-28T12:49:29.203</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\osApplication\week8\week8\Assets\Avril Lavigne - Girlfriend.mp3">
+    <AppxPackagedFile Include="D:\yaoxh6-uwp\uwp\week8\week8\week8\Assets\Avril Lavigne - Girlfriend.mp3">
       <PackagePath>Assets\Avril Lavigne - Girlfriend.mp3</PackagePath>
       <Modified>2018-04-28T12:56:20.610</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\osApplication\week8\week8\Assets\Here%27s To Never Growing Up - Avril Lavigne.mp3">
+    <AppxPackagedFile Include="D:\yaoxh6-uwp\uwp\week8\week8\week8\Assets\Here%27s To Never Growing Up - Avril Lavigne.mp3">
       <PackagePath>Assets\Here%27s To Never Growing Up - Avril Lavigne.mp3</PackagePath>
       <Modified>2018-04-28T12:53:27.976</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\osApplication\week8\week8\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="D:\yaoxh6-uwp\uwp\week8\week8\week8\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
       <Modified>2018-04-27T14:56:46.243</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\osApplication\week8\week8\Assets\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="D:\yaoxh6-uwp\uwp\week8\week8\week8\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
       <Modified>2018-04-13T00:54:18.794</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\osApplication\week8\week8\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="D:\yaoxh6-uwp\uwp\week8\week8\week8\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2018-04-13T00:54:18.794</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\osApplication\week8\week8\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="D:\yaoxh6-uwp\uwp\week8\week8\week8\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2018-04-13T00:54:18.794</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\osApplication\week8\week8\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="D:\yaoxh6-uwp\uwp\week8\week8\week8\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2018-04-13T00:54:18.794</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\osApplication\week8\week8\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="D:\yaoxh6-uwp\uwp\week8\week8\week8\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2018-04-13T00:54:18.794</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\osApplication\week8\week8\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="D:\yaoxh6-uwp\uwp\week8\week8\week8\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2018-04-13T00:54:18.794</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\osApplication\week8\week8\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="D:\yaoxh6-uwp\uwp\week8\week8\week8\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2018-04-13T00:54:18.794</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\osApplication\week8\week8\bin\x86\Debug\week8.xr.xml">
+    <AppxPackagedFile Include="D:\yaoxh6-uwp\uwp\week8\week8\week8\bin\x86\Debug\week8.xr.xml">
       <PackagePath>week8.xr.xml</PackagePath>
       <Modified>2018-04-28T13:42:15.866</Modified>
     </AppxPackagedFile>
@@ -753,14 +753,14 @@
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
       <Modified>2017-09-28T09:28:16.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\osApplication\week8\week8\bin\x86\Debug\resources.pri">
+    <AppxPackagedFile Include="D:\yaoxh6-uwp\uwp\week8\week8\week8\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-04-28T15:13:27.329</Modified>
+      <Modified>2018-05-04T00:26:21.403</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\osApplication\week8\week8\bin\x86\Debug\Core\week8.exe">
+    <AppxPackagedFile Include="D:\yaoxh6-uwp\uwp\week8\week8\week8\bin\x86\Debug\Core\week8.exe">
       <PackagePath>week8.exe</PackagePath>
-      <Modified>2018-04-28T15:13:27.775</Modified>
+      <Modified>2018-05-04T00:26:22.435</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

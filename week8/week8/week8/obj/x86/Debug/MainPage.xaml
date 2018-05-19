@@ -1,0 +1,56 @@
+﻿<Page x:ConnectionId='1'
+    x:Class="week8.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:week8"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Page.Resources>
+        <local:PositionSliderConverter x:Key="converter" />
+        <Storyboard x:ConnectionId='2' x:Name="AvrilStoryboard" RepeatBehavior="Forever">
+            <DoubleAnimation Duration="0:0:20" 
+                             To="360" 
+                             Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.Rotation)" 
+                             Storyboard.TargetName="Picture" 
+                             d:IsOptimized="True"/>
+        </Storyboard>
+    </Page.Resources>
+    <Page.BottomAppBar>
+        <CommandBar>
+            <AppBarButton x:ConnectionId='3' x:Name="ButtonPlay" Icon="Play"                         />
+            <AppBarButton x:ConnectionId='4' x:Name="ButtonPause" Icon="Pause"                          />
+            <AppBarButton x:ConnectionId='5' x:Name="ButtonStop" Icon="Stop"                         />
+            <AppBarButton x:ConnectionId='6' x:Name="ButtonFullScreen" Icon="FullScreen"                               />
+            <AppBarButton x:ConnectionId='7' x:Name="ButtonFolder" Icon="Folder"                           />
+            <AppBarButton x:ConnectionId='8' x:Name="ButtonVolume" Icon="Volume"                           />
+        </CommandBar>
+    </Page.BottomAppBar>
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="100"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Ellipse x:ConnectionId='9' Grid.Row="1" Grid.Column="1"  x:Name="Picture" Height="250" Width="250" Visibility="Collapsed" RenderTransformOrigin="0.5, 0.5">
+            <Ellipse.RenderTransform>
+                <CompositeTransform />
+            </Ellipse.RenderTransform>
+            <Ellipse.Fill>
+                <ImageBrush ImageSource="Assets/1.jpg"/>
+            </Ellipse.Fill>
+        </Ellipse>
+        <MediaPlayerElement x:ConnectionId='10' x:Name="_mediaPlayerElement" HorizontalAlignment="Stretch" Grid.Row="1" Grid.Column="1"/>
+        <StackPanel Grid.Row="2" Grid.Column="1">
+            <Slider x:ConnectionId='12' x:Name="sliderLine"                                                                                                     />
+        </StackPanel>
+        <Slider x:ConnectionId='11' Grid.Row="2" Grid.Column="2" Minimum="0" Maximum="1" x:Name="Volumn" Width="100" Value="0.5" StepFrequency="0.1"                                    Orientation="Vertical" HorizontalAlignment="Right" Visibility="Collapsed"/>
+    </Grid>
+</Page>
+
