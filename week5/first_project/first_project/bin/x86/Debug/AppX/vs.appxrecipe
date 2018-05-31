@@ -10,7 +10,7 @@
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>cbd62bec-348a-4920-9c60-60e86e5a1584</PackageIdentityName>
     <PackageIdentityPublisher>CN=28798</PackageIdentityPublisher>
-    <IntermediateOutputPath>D:\osApplication\first_project\first_project\obj\x86\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>D:\yaoxh6-uwp\uwp\week5\first_project\first_project\obj\x86\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType>
     </RemoteDeploymentType>
     <PackageRegistrationPath>
@@ -18,8 +18,8 @@
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
-    <LayoutDir>D:\osApplication\first_project\first_project\bin\x86\Debug\AppX</LayoutDir>
-    <RegisteredManifestChecksum>A2CA035A9850CEEC2850A22C8A55124FDE7D6B98FB2241F8AF03337B07B41F6D</RegisteredManifestChecksum>
+    <LayoutDir>D:\yaoxh6-uwp\uwp\week5\first_project\first_project\bin\x86\Debug\AppX</LayoutDir>
+    <RegisteredManifestChecksum>D695BA89C716E33D7714BD2E000AA61879DFF0D0F0BA7025C75555FF9FB18BF7</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>cbd62bec-348a-4920-9c60-60e86e5a1584_1.0.0.0_x86__x6kt9fxmh4xar</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>cbd62bec-348a-4920-9c60-60e86e5a1584_x6kt9fxmh4xar!App</RegisteredUserModeAppID>
     <RegisteredPackageID>cbd62bec-348a-4920-9c60-60e86e5a1584</RegisteredPackageID>
@@ -28,16 +28,16 @@
     <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="D:\osApplication\first_project\first_project\bin\x86\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="D:\yaoxh6-uwp\uwp\week5\first_project\first_project\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-04-10T13:40:31.240</Modified>
+      <Modified>2018-05-30T14:41:19.178</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="D:\osApplication\first_project\first_project\bin\x86\Debug\first_project.exe">
+    <AppxPackagedFile Include="D:\yaoxh6-uwp\uwp\week5\first_project\first_project\bin\x86\Debug\first_project.exe">
       <PackagePath>entrypoint\first_project.exe</PackagePath>
-      <Modified>2018-04-10T13:40:30.825</Modified>
+      <Modified>2018-05-30T14:41:17.311</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\28798\.nuget\packages\microsoft.csharp\4.0.1\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -198,6 +198,10 @@
     <AppxPackagedFile Include="C:\Users\28798\.nuget\packages\runtime.win7.system.private.uri\4.0.2\runtimes\win\lib\netcore50\System.Private.Uri.dll">
       <PackagePath>System.Private.Uri.dll</PackagePath>
       <Modified>2016-07-01T07:48:12.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\28798\.nuget\packages\sqlitepcl\3.8.7.2\lib\netcore451\SQLitePCL.dll">
+      <PackagePath>SQLitePCL.dll</PackagePath>
+      <Modified>2014-12-09T03:04:52.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\28798\.nuget\packages\system.appcontext\4.1.0\lib\netcore50\System.AppContext.dll">
       <PackagePath>System.AppContext.dll</PackagePath>
@@ -495,151 +499,142 @@
       <PackagePath>System.Xml.XmlSerializer.dll</PackagePath>
       <Modified>2016-06-11T15:15:04.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\osApplication\first_project\first_project\Assets\1.scale-200.png">
+    <AppxPackagedFile Include="D:\yaoxh6-uwp\uwp\week5\first_project\first_project\Assets\1.scale-200.png">
       <PackagePath>Assets\1.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-04-09T12:45:31.986</Modified>
+      <Modified>2018-04-10T15:01:41.967</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\osApplication\first_project\first_project\Assets\2.png">
+    <AppxPackagedFile Include="D:\yaoxh6-uwp\uwp\week5\first_project\first_project\Assets\2.png">
       <PackagePath>Assets\2.png</PackagePath>
-      <Modified>2018-04-09T12:47:47.697</Modified>
+      <Modified>2018-04-10T15:01:41.969</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\osApplication\first_project\first_project\Assets\3.png">
+    <AppxPackagedFile Include="D:\yaoxh6-uwp\uwp\week5\first_project\first_project\Assets\3.png">
       <PackagePath>Assets\3.png</PackagePath>
-      <Modified>2018-04-09T12:49:30.394</Modified>
+      <Modified>2018-04-10T15:01:41.970</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\osApplication\first_project\first_project\Assets\picture1.png">
+    <AppxPackagedFile Include="D:\yaoxh6-uwp\uwp\week5\first_project\first_project\Assets\picture1.png">
       <PackagePath>Assets\picture1.png</PackagePath>
-      <Modified>2018-04-09T12:43:57.739</Modified>
+      <Modified>2018-04-10T15:01:41.982</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\osApplication\first_project\first_project\Assets\picture2.png">
+    <AppxPackagedFile Include="D:\yaoxh6-uwp\uwp\week5\first_project\first_project\Assets\picture2.png">
       <PackagePath>Assets\picture2.png</PackagePath>
-      <Modified>2018-04-08T00:44:06.818</Modified>
+      <Modified>2018-04-10T15:01:41.983</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\osApplication\first_project\first_project\Assets\timg.png">
+    <AppxPackagedFile Include="D:\yaoxh6-uwp\uwp\week5\first_project\first_project\Assets\timg.png">
       <PackagePath>Assets\timg.png</PackagePath>
-      <Modified>2018-03-17T01:09:59.843</Modified>
+      <Modified>2018-04-10T15:01:41.984</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\osApplication\first_project\first_project\Assets\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="D:\yaoxh6-uwp\uwp\week5\first_project\first_project\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
-      <Modified>2018-01-28T04:19:29.451</Modified>
+      <Modified>2018-04-10T15:01:41.971</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\osApplication\first_project\first_project\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="D:\yaoxh6-uwp\uwp\week5\first_project\first_project\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-01-28T04:19:29.451</Modified>
+      <Modified>2018-04-10T15:01:41.971</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\osApplication\first_project\first_project\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="D:\yaoxh6-uwp\uwp\week5\first_project\first_project\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-04-09T12:47:47.697</Modified>
+      <Modified>2018-04-10T15:01:41.978</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\osApplication\first_project\first_project\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="D:\yaoxh6-uwp\uwp\week5\first_project\first_project\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-01-28T04:19:29.451</Modified>
+      <Modified>2018-04-10T15:01:41.979</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\osApplication\first_project\first_project\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="D:\yaoxh6-uwp\uwp\week5\first_project\first_project\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-01-28T04:19:29.451</Modified>
+      <Modified>2018-04-10T15:01:41.980</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\osApplication\first_project\first_project\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="D:\yaoxh6-uwp\uwp\week5\first_project\first_project\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-01-28T04:19:29.451</Modified>
+      <Modified>2018-04-10T15:01:41.980</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\osApplication\first_project\first_project\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="D:\yaoxh6-uwp\uwp\week5\first_project\first_project\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-04-09T12:49:30.394</Modified>
+      <Modified>2018-04-10T15:01:41.980</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\osApplication\first_project\first_project\Assets\windows.jpg">
+    <AppxPackagedFile Include="D:\yaoxh6-uwp\uwp\week5\first_project\first_project\Assets\windows.jpg">
       <PackagePath>Assets\windows.jpg</PackagePath>
-      <Modified>2018-03-29T03:04:11.423</Modified>
+      <Modified>2018-04-10T15:01:41.985</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\osApplication\first_project\first_project\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="D:\yaoxh6-uwp\uwp\week5\first_project\first_project\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
-      <Modified>2018-03-09T03:53:42.200</Modified>
+      <Modified>2018-04-10T15:01:41.994</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\osApplication\first_project\first_project\bin\x86\Debug\first_project.xr.xml">
+    <AppxPackagedFile Include="D:\yaoxh6-uwp\uwp\week5\first_project\first_project\bin\x86\Debug\first_project.xr.xml">
       <PackagePath>first_project.xr.xml</PackagePath>
-      <Modified>2018-04-10T11:53:59.390</Modified>
+      <Modified>2018-04-10T15:01:42.618</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.15063.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
       <Modified>2018-03-23T00:48:33.052</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\osApplication\first_project\first_project\bin\x86\Debug\resources.pri">
+    <AppxPackagedFile Include="D:\yaoxh6-uwp\uwp\week5\first_project\first_project\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-04-10T11:54:00.041</Modified>
+      <Modified>2018-05-30T14:41:18.701</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\osApplication\first_project\first_project\bin\x86\Debug\Core\first_project.exe">
+    <AppxPackagedFile Include="D:\yaoxh6-uwp\uwp\week5\first_project\first_project\bin\x86\Debug\Core\first_project.exe">
       <PackagePath>first_project.exe</PackagePath>
-      <Modified>2018-04-10T13:40:31.228</Modified>
+      <Modified>2018-05-30T14:41:19.175</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
     <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.NET.CoreRuntime\1.1\">
       <Name>Microsoft.NET.CoreRuntime.1.1</Name>
-      <Version>1.1.25305.1</Version>
+      <Version>1.1.25915.0</Version>
       <Architecture>ARM</Architecture>
-      <FrameworkIdentity>Name = Microsoft.NET.CoreRuntime.1.1, MinVersion = 1.1.25305.1, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <FrameworkIdentity>Name = Microsoft.NET.CoreRuntime.1.1, MinVersion = 1.1.25915.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
       <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.NET.CoreRuntime\1.1\.\AppX\ARM\Microsoft.NET.CoreRuntime.1.1.appx</AppxLocation>
       <MoreInfo>
       </MoreInfo>
     </ResolvedSDKReference>
     <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.NET.CoreRuntime\1.1\">
       <Name>Microsoft.NET.CoreRuntime.1.1</Name>
-      <Version>1.1.25305.1</Version>
+      <Version>1.1.25915.0</Version>
       <Architecture>x64</Architecture>
-      <FrameworkIdentity>Name = Microsoft.NET.CoreRuntime.1.1, MinVersion = 1.1.25305.1, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <FrameworkIdentity>Name = Microsoft.NET.CoreRuntime.1.1, MinVersion = 1.1.25915.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
       <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.NET.CoreRuntime\1.1\.\AppX\x64\Microsoft.NET.CoreRuntime.1.1.appx</AppxLocation>
       <MoreInfo>
       </MoreInfo>
     </ResolvedSDKReference>
     <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.NET.CoreRuntime\1.1\">
       <Name>Microsoft.NET.CoreRuntime.1.1</Name>
-      <Version>1.1.25305.1</Version>
+      <Version>1.1.25915.0</Version>
       <Architecture>x86</Architecture>
-      <FrameworkIdentity>Name = Microsoft.NET.CoreRuntime.1.1, MinVersion = 1.1.25305.1, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <FrameworkIdentity>Name = Microsoft.NET.CoreRuntime.1.1, MinVersion = 1.1.25915.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
       <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.NET.CoreRuntime\1.1\.\AppX\x86\Microsoft.NET.CoreRuntime.1.1.appx</AppxLocation>
       <MoreInfo>
       </MoreInfo>
     </ResolvedSDKReference>
     <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
       <Name>Microsoft.VCLibs.140.00.Debug</Name>
-      <Version>14.0.25830.2</Version>
+      <Version>14.0.26128.0</Version>
       <Architecture>ARM</Architecture>
-      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.25830.2, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.26128.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
       <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Debug\ARM\Microsoft.VCLibs.ARM.Debug.14.00.appx</AppxLocation>
       <MoreInfo>
       </MoreInfo>
     </ResolvedSDKReference>
     <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
       <Name>Microsoft.VCLibs.140.00.Debug</Name>
-      <Version>14.0.25830.2</Version>
-      <Architecture>ARM64</Architecture>
-      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.25830.2, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
-      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Debug\ARM64\Microsoft.VCLibs.ARM64.Debug.14.00.appx</AppxLocation>
-      <MoreInfo>
-      </MoreInfo>
-    </ResolvedSDKReference>
-    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
-      <Name>Microsoft.VCLibs.140.00.Debug</Name>
-      <Version>14.0.25830.2</Version>
+      <Version>14.0.26128.0</Version>
       <Architecture>x64</Architecture>
-      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.25830.2, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.26128.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
       <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Debug\x64\Microsoft.VCLibs.x64.Debug.14.00.appx</AppxLocation>
       <MoreInfo>
       </MoreInfo>
     </ResolvedSDKReference>
     <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
       <Name>Microsoft.VCLibs.140.00.Debug</Name>
-      <Version>14.0.25830.2</Version>
+      <Version>14.0.26128.0</Version>
       <Architecture>x86</Architecture>
-      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.25830.2, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.26128.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
       <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Debug\x86\Microsoft.VCLibs.x86.Debug.14.00.appx</AppxLocation>
       <MoreInfo>
       </MoreInfo>
